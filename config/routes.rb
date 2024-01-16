@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  
+  root 'dogs#index' 
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  #dogs controller routes 
+  resources :dogs, only: [:index] do
+    collection do
+      get 'fetch_dogs'
+    end
+  end
+
 end
