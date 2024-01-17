@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #dogs controller routes 
   resources :dogs, only: [:index] do
     collection do
-      get 'fetch_dogs'
+      get 'fetch_breed'
     end
   end
 

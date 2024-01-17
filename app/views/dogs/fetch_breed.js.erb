@@ -1,0 +1,12 @@
+<% if @dog_data.key?(:error) %>
+  $("#result").html('<p>Error: we could not find the breed. Please try again.</p>');
+<% else %>
+  var imageUrl = '<%= j @dog_data[:message] %>';
+  var dogName = '<%= j @dog_data[:message].split("/")[4] %>'; // Extracting dog name from the URL
+  var partialHtml = '<%= j render partial: "dog_card", locals: { imageUrl: "IMAGE_URL", dogName: "DOG_NAME" } %>';
+
+  partialHtml = partialHtml.replace("IMAGE_URL", imageUrl);
+  partialHtml = partialHtml.replace("DOG_NAME", dogName);
+
+  $("#result").html(partialHtml);
+<% end %>
