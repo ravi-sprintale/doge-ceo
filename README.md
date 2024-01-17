@@ -1,24 +1,22 @@
-# README
+We have designed a simple web form, which has a text input field, labeled "Breed" and a "Submit" button. When the form is submitted, a dog breed image id fetched from Dog API (https://dog.ceo/dog-api/) and presented to the right of the web form, along with the submitted dog breed name. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Technical Aspects
+* Ruby version- ruby-3.0.0
+* Rails version- rails-7.0.8
+* jquery
+* jquery-ujs
+* ajax
+* bootsrap
+* rails service
+* api calling
+* html
+* css
+* javascript
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Installation
+* setup rails and ruby version
+* clone the repo - https://github.com/ravi-sprintale/doge-ceo.git
+* bundle install
+* rails s (to start the server)
+  
